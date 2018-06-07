@@ -1,7 +1,11 @@
 <?php
 
-Route::get('/', 'PostsController@index');
-
-/*Route::get('/post/show', 'PostsController@show');*/
+Route::get('/', function () {
+	return view('post.login'); 
+} );
 
 Route::resource('post', 'PostsController');
+
+Route::get('/dashboard', function () { 
+	return view('post.dashboard');
+} );
