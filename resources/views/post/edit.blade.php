@@ -10,6 +10,9 @@
 				<a href="{{ route('post.index')}}" class="btn btn-primary pull-rigth">Listado</a>
 				
 			</h2>
+
+			@include('post.fragment.error')
+
 			{!! Form::model($post, ['route'=> ['post.update', $post->id], 'method' => 'PUT']) !!}
 
 				@include('post.fragment.form')

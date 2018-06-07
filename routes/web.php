@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-	return view('post.login'); 
+	return view('post.index'); 
 } );
 
 Route::resource('post', 'PostsController');
